@@ -2,7 +2,7 @@
 //  AccountViewModelTests.swift
 //  MoneyBoxTests
 //
-//  Created by student on 2024-03-25.
+//  Created by Yinka on 2024-03-25.
 //
 
 import XCTest

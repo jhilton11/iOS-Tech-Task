@@ -15,7 +15,7 @@ class ProductCell: UITableViewCell {
     lazy var viewPanel: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .lightGray
+        view.backgroundColor = Colours.DeepGreyColour
         view.layer.cornerRadius = 10
         view.layer.borderColor = UIColor.black.cgColor
         view.layer.borderWidth = 1
@@ -26,6 +26,8 @@ class ProductCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Account name"
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
     }()
     
@@ -33,6 +35,8 @@ class ProductCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Plan name"
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
     }()
     
@@ -40,7 +44,18 @@ class ProductCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Moneybox label"
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
+    }()
+    
+    lazy var disclosureImg: UIImageView = {
+        let imgView = UIImageView()
+        imgView.translatesAutoresizingMaskIntoConstraints = false
+        imgView.image = UIImage(systemName: "chevron.right")
+        imgView.contentMode = .scaleAspectFit
+        imgView.tintColor = .black
+        return imgView
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -71,6 +86,7 @@ class ProductCell: UITableViewCell {
         viewPanel.addSubview(accountNameLabel)
         viewPanel.addSubview(planValueLabel)
         viewPanel.addSubview(moneyBoxLabel)
+        viewPanel.addSubview(disclosureImg)
         
         viewPanel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
@@ -93,6 +109,12 @@ class ProductCell: UITableViewCell {
             make.leading.equalTo(accountNameLabel)
             make.bottom.equalToSuperview().offset(-10)
         }
+        
+        disclosureImg.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-20)
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(30)
+        }
     }
     
 }
@@ -103,6 +125,8 @@ class ProductCellHeader: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Name Label"
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
     }()
     
@@ -110,6 +134,8 @@ class ProductCellHeader: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Plan Label"
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
     }()
     

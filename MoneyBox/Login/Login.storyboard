@@ -16,20 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="chM-je-gA4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD LUCK!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OK-Xi-XJN">
-                                <rect key="frame" x="154" y="438" width="106" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
                         <color key="backgroundColor" name="GreyColor"/>
-                        <constraints>
-                            <constraint firstItem="7OK-Xi-XJN" firstAttribute="centerY" secondItem="chM-je-gA4" secondAttribute="centerY" id="Dju-5I-EOs"/>
-                            <constraint firstItem="7OK-Xi-XJN" firstAttribute="centerX" secondItem="chM-je-gA4" secondAttribute="centerX" id="Fmx-0t-JJY"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cYU-Jq-xFg"/>
                 </viewController>
@@ -39,9 +27,6 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.34299999475479126" green="0.75" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="GreyColor">
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

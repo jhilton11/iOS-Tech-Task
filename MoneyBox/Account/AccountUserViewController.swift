@@ -51,7 +51,7 @@ class AccountUserViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         navigationItem.title = "User Accounts"
-        view.backgroundColor = .white.withAlphaComponent(0.75)
+        view.backgroundColor = Colours.GreyColour
         setConstraints()
     }
     
@@ -119,5 +119,6 @@ extension AccountUserViewController: AccountUserViewModelDelegate {
     
     func loginDidFail(errorMessage: String) {
         refreshControl.endRefreshing()
+        Utilities.createAlert(vc: self, title: "", message: errorMessage)
     }
 }

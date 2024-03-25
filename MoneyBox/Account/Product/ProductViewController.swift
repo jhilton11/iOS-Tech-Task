@@ -2,7 +2,7 @@
 //  ProductViewController.swift
 //  MoneyBox
 //
-//  Created by student on 2024-03-24.
+//  Created by Yinka on 2024-03-24.
 //
 
 import UIKit
@@ -24,6 +24,8 @@ class ProductViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = product?.product?.name ?? ""
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
     }()
     
@@ -31,6 +33,8 @@ class ProductViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Plan Value: \(product?.planValue?.formatToCurrency() ?? "")"
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
     }()
     
@@ -38,6 +42,8 @@ class ProductViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Moneybox: \(moneyBox.formatToCurrency())"
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.adjustsFontForContentSizeCategory = true
         return label
     }()
     
@@ -46,10 +52,11 @@ class ProductViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         let formattedAmount = 10.formatToCurrency()
         button.setTitle("Add \(formattedAmount)", for: .normal)
-        button.backgroundColor = .lightGray
-        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = Colours.DeepGreyColour
+        button.setTitleColor(.label, for: .normal)
         button.addBorder()
         button.addTarget(self, action: #selector(addMoney), for: .touchUpInside)
+        button.accessibilityHint = "Add 10 pounds button"
         return button
     }()
     
@@ -75,8 +82,8 @@ class ProductViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.title = "Individual Accounts"
-        view.backgroundColor = .white.withAlphaComponent(0.75)
+        navigationItem.title = "Individual Account"
+        view.backgroundColor = Colours.GreyColour
         setConstraints()
     }
     
@@ -89,6 +96,8 @@ class ProductViewController: UIViewController {
     }
     
     private func setConstraints() {
+        let tfHeight = 44.0
+        
         view.addSubview(accountTypeLabel)
         view.addSubview(planValueLabel)
         view.addSubview(moneyBoxLabel)
@@ -113,7 +122,7 @@ class ProductViewController: UIViewController {
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(50)
             make.width.equalTo(200)
-            make.height.equalTo(40)
+            make.height.equalTo(tfHeight)
         }
         
         activityIndicator.center = view.center
@@ -131,5 +140,6 @@ extension ProductViewController: ProductViewModelDelegate {
     
     func loginDidFail(errorMessage: String) {
         activityIndicator.stopAnimating()
+        Utilities.createAlert(vc: self, title: "", message: errorMessage)
     }
 }

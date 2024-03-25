@@ -29,6 +29,10 @@
 		3F3C2F2C2BB10614004432ED /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */; };
 		3F3C2F2D2BB10614004432ED /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */; };
 		3F3C2F2F2BB154E8004432ED /* AccountViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F2E2BB154E8004432ED /* AccountViewModelTests.swift */; };
+		3F3C2F312BB161C8004432ED /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F302BB161C8004432ED /* UITextField+Extension.swift */; };
+		3F3C2F322BB161C8004432ED /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F302BB161C8004432ED /* UITextField+Extension.swift */; };
+		3F3C2F342BB17C4C004432ED /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F332BB17C4C004432ED /* Colours.swift */; };
+		3F3C2F352BB17C4C004432ED /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F332BB17C4C004432ED /* Colours.swift */; };
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
 		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
 		B26EF47828881E7F003BFDF2 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B26EF47728881E7F003BFDF2 /* Networking */; };
@@ -63,6 +67,8 @@
 		3F3C2F272BB10279004432ED /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFunctions.swift; sourceTree = "<group>"; };
 		3F3C2F2E2BB154E8004432ED /* AccountViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelTests.swift; sourceTree = "<group>"; };
+		3F3C2F302BB161C8004432ED /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		3F3C2F332BB17C4C004432ED /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B24EED92288ED5740016C233 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 			children = (
 				3F3C2F152BAFA97C004432ED /* Double+Extension.swift */,
 				3F3C2F272BB10279004432ED /* UIView+Extension.swift */,
+				3F3C2F302BB161C8004432ED /* UITextField+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */,
+				3F3C2F332BB17C4C004432ED /* Colours.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -183,9 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				B2CA47662794D69A0041B3A5 /* StubData.swift */,
-				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
 				3F3C2F1C2BB0BBBC004432ED /* DataProviderMock.swift */,
 				3F3C2F1E2BB0BC78004432ED /* LoginViewModelTest.swift */,
+				3F3C2F2E2BB154E8004432ED /* AccountViewModelTests.swift */,
+				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
 			);
 			path = MoneyBoxTests;
 			sourceTree = "<group>";
@@ -195,7 +204,6 @@
 			children = (
 				B2CA47692794D6D70041B3A5 /* LoginSucceed.json */,
 				B2CA47B2279604A10041B3A5 /* Accounts.json */,
-				3F3C2F2E2BB154E8004432ED /* AccountViewModelTests.swift */,
 			);
 			path = ResponseJsons;
 			sourceTree = "<group>";
@@ -322,12 +330,14 @@
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
 				3F23E3BF2BAD121500984772 /* AccountUserViewController.swift in Sources */,
 				3F3C2F162BAFA97C004432ED /* Double+Extension.swift in Sources */,
+				3F3C2F342BB17C4C004432ED /* Colours.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
 				3F3C2F132BAF58D1004432ED /* ProductCell.swift in Sources */,
 				3F3C2F252BB0E71D004432ED /* ProductViewModel.swift in Sources */,
 				3F3C2F112BAF570C004432ED /* AccountUserViewModel.swift in Sources */,
 				3F3C2F2C2BB10614004432ED /* UtilFunctions.swift in Sources */,
 				3F3C2F192BAFB09D004432ED /* ProductViewController.swift in Sources */,
+				3F3C2F312BB161C8004432ED /* UITextField+Extension.swift in Sources */,
 				3F3C2F282BB10279004432ED /* UIView+Extension.swift in Sources */,
 				3F23E3BC2BAD0B4500984772 /* LoginViewModel.swift in Sources */,
 			);
@@ -338,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3C2F1F2BB0BC78004432ED /* LoginViewModelTest.swift in Sources */,
+				3F3C2F352BB17C4C004432ED /* Colours.swift in Sources */,
 				B2CA47672794D69A0041B3A5 /* StubData.swift in Sources */,
 				3F23E3C02BAD121500984772 /* AccountUserViewController.swift in Sources */,
 				3F3C2F222BB0CAA1004432ED /* ProductViewController.swift in Sources */,
@@ -347,6 +358,7 @@
 				3F3C2F212BB0CA9C004432ED /* ProductCell.swift in Sources */,
 				3F3C2F2D2BB10614004432ED /* UtilFunctions.swift in Sources */,
 				3F3C2F202BB0CA95004432ED /* AccountUserViewModel.swift in Sources */,
+				3F3C2F322BB161C8004432ED /* UITextField+Extension.swift in Sources */,
 				3F3C2F292BB10279004432ED /* UIView+Extension.swift in Sources */,
 				3F3C2F1D2BB0BBBC004432ED /* DataProviderMock.swift in Sources */,
 			);

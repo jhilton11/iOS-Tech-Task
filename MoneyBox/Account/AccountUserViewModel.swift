@@ -11,14 +11,14 @@ import Networking
 class AccountUserViewModel {
     
     weak var delegate: AccountUserViewModelDelegate?
-    var dataprovider: DataProvider?
+    var dataprovider: DataProviderLogic?
     
     var products = [ProductResponse]()
     var totalPlanValue = 0.0
     var errorMessage = ""
     
     init(provider: DataProviderLogic) {
-        self.dataprovider = provider as? DataProvider
+        self.dataprovider = provider
     }
     
     func getProducts() {

@@ -2,7 +2,7 @@
 //  LoginViewModelTest.swift
 //  MoneyBoxTests
 //
-//  Created by student on 2024-03-24.
+//  Created by Yinka on 2024-03-24.
 //
 
 import XCTest
