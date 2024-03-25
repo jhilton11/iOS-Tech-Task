@@ -7,7 +7,6 @@
 
 import XCTest
 @testable import MoneyBox
-@testable import Networking
 
 final class AccountViewModelTests: XCTestCase {
     
@@ -22,24 +21,32 @@ final class AccountViewModelTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        SessionManager().setUserToken("GuQfJPpjUyJH10Og+hS9c0ttz4q2ZoOnEQBSBP2eAEs=")
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        SessionManager().removeUserToken()
+        viewModel.products = []
+        viewModel.totalPlanValue = 0.0
     }
 
     func testFetchProducts() throws {
         expectation = expectation(description: "fetch products")
-        print("Trying to fetch")
+        
         viewModel.getProducts()
         
         waitForExpectations(timeout: 1)
         
-//        let result = try XCTUnwrap()
+        XCTAssertEqual(viewModel.products.count, 2)
+    }
+    
+    func testPlanValue() throws {
+        expectation = expectation(description: "get planValue")
         
-        XCTAssertEqual(viewModel.products.count, 3) // 5
+        viewModel.getProducts()
+        
+        waitForExpectations(timeout: 1)
+        
+        XCTAssertEqual(viewModel.totalPlanValue, 15707.080000)
     }
 
     func testPerformanceExample() throws {
@@ -57,7 +64,6 @@ extension AccountViewModelTests: AccountUserViewModelDelegate {
     }
     
     func loginDidFail(errorMessage: String) {
-        print("Got an error")
         expectation?.fulfill()
     }
 }
