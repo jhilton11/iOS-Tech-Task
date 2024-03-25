@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F23E3B72BAC9BE800984772 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F23E3B62BAC9BE800984772 /* SnapKit */; };
+		3F23E3B92BAC9BE800984772 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3F23E3B82BAC9BE800984772 /* SnapKit-Dynamic */; };
+		3F23E3BC2BAD0B4500984772 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E3BB2BAD0B4500984772 /* LoginViewModel.swift */; };
+		3F23E3BF2BAD121500984772 /* AccountUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E3BE2BAD121500984772 /* AccountUserViewController.swift */; };
+		3F23E3C02BAD121500984772 /* AccountUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E3BE2BAD121500984772 /* AccountUserViewController.swift */; };
+		3F3C2F112BAF570C004432ED /* AccountUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F102BAF570C004432ED /* AccountUserViewModel.swift */; };
+		3F3C2F132BAF58D1004432ED /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F122BAF58D1004432ED /* ProductCell.swift */; };
+		3F3C2F162BAFA97C004432ED /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F152BAFA97C004432ED /* Double+Extension.swift */; };
+		3F3C2F192BAFB09D004432ED /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F182BAFB09D004432ED /* ProductViewController.swift */; };
+		3F3C2F1D2BB0BBBC004432ED /* DataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F1C2BB0BBBC004432ED /* DataProviderMock.swift */; };
+		3F3C2F1F2BB0BC78004432ED /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F1E2BB0BC78004432ED /* LoginViewModelTest.swift */; };
+		3F3C2F202BB0CA95004432ED /* AccountUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F102BAF570C004432ED /* AccountUserViewModel.swift */; };
+		3F3C2F212BB0CA9C004432ED /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F122BAF58D1004432ED /* ProductCell.swift */; };
+		3F3C2F222BB0CAA1004432ED /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F182BAFB09D004432ED /* ProductViewController.swift */; };
+		3F3C2F232BB0CAEC004432ED /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F152BAFA97C004432ED /* Double+Extension.swift */; };
+		3F3C2F252BB0E71D004432ED /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F242BB0E71D004432ED /* ProductViewModel.swift */; };
+		3F3C2F262BB0E71D004432ED /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F242BB0E71D004432ED /* ProductViewModel.swift */; };
+		3F3C2F282BB10279004432ED /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F272BB10279004432ED /* UIView+Extension.swift */; };
+		3F3C2F292BB10279004432ED /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F272BB10279004432ED /* UIView+Extension.swift */; };
+		3F3C2F2C2BB10614004432ED /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */; };
+		3F3C2F2D2BB10614004432ED /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */; };
+		3F3C2F2F2BB154E8004432ED /* AccountViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2F2E2BB154E8004432ED /* AccountViewModelTests.swift */; };
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
 		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
 		B26EF47828881E7F003BFDF2 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B26EF47728881E7F003BFDF2 /* Networking */; };
@@ -29,6 +51,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F23E3BB2BAD0B4500984772 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3F23E3BE2BAD121500984772 /* AccountUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountUserViewController.swift; sourceTree = "<group>"; };
+		3F3C2F102BAF570C004432ED /* AccountUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountUserViewModel.swift; sourceTree = "<group>"; };
+		3F3C2F122BAF58D1004432ED /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		3F3C2F152BAFA97C004432ED /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		3F3C2F182BAFB09D004432ED /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		3F3C2F1C2BB0BBBC004432ED /* DataProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderMock.swift; sourceTree = "<group>"; };
+		3F3C2F1E2BB0BC78004432ED /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		3F3C2F242BB0E71D004432ED /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		3F3C2F272BB10279004432ED /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFunctions.swift; sourceTree = "<group>"; };
+		3F3C2F2E2BB154E8004432ED /* AccountViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelTests.swift; sourceTree = "<group>"; };
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B24EED92288ED5740016C233 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
@@ -49,6 +83,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26EF47828881E7F003BFDF2 /* Networking in Frameworks */,
+				3F23E3B72BAC9BE800984772 /* SnapKit in Frameworks */,
+				3F23E3B92BAC9BE800984772 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +98,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F23E3BA2BAD0B2400984772 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B228EA6A2880B30B00B35F16 /* Login.storyboard */,
+				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
+				3F23E3BB2BAD0B4500984772 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3F23E3BD2BAD11C500984772 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				3F23E3BE2BAD121500984772 /* AccountUserViewController.swift */,
+				3F3C2F102BAF570C004432ED /* AccountUserViewModel.swift */,
+				3F3C2F122BAF58D1004432ED /* ProductCell.swift */,
+				3F3C2F172BAFB06C004432ED /* Product */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		3F3C2F142BAFA95A004432ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C2F152BAFA97C004432ED /* Double+Extension.swift */,
+				3F3C2F272BB10279004432ED /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3F3C2F172BAFB06C004432ED /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C2F182BAFB09D004432ED /* ProductViewController.swift */,
+				3F3C2F242BB0E71D004432ED /* ProductViewModel.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		3F3C2F2A2BB105E6004432ED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C2F2B2BB10614004432ED /* UtilFunctions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B2CA46BF279350880041B3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +167,10 @@
 		B2CA46CA279350880041B3A5 /* MoneyBox */ = {
 			isa = PBXGroup;
 			children = (
-				B228EA6A2880B30B00B35F16 /* Login.storyboard */,
-				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
+				3F23E3BA2BAD0B2400984772 /* Login */,
+				3F23E3BD2BAD11C500984772 /* Account */,
+				3F3C2F142BAFA95A004432ED /* Extension */,
+				3F3C2F2A2BB105E6004432ED /* Utilities */,
 				B2CA46CB279350880041B3A5 /* AppDelegate.swift */,
 				B2CA46D42793508A0041B3A5 /* Assets.xcassets */,
 				B2CA46D62793508A0041B3A5 /* LaunchScreen.storyboard */,
@@ -99,6 +184,8 @@
 			children = (
 				B2CA47662794D69A0041B3A5 /* StubData.swift */,
 				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
+				3F3C2F1C2BB0BBBC004432ED /* DataProviderMock.swift */,
+				3F3C2F1E2BB0BC78004432ED /* LoginViewModelTest.swift */,
 			);
 			path = MoneyBoxTests;
 			sourceTree = "<group>";
@@ -108,6 +195,7 @@
 			children = (
 				B2CA47692794D6D70041B3A5 /* LoginSucceed.json */,
 				B2CA47B2279604A10041B3A5 /* Accounts.json */,
+				3F3C2F2E2BB154E8004432ED /* AccountViewModelTests.swift */,
 			);
 			path = ResponseJsons;
 			sourceTree = "<group>";
@@ -138,6 +226,8 @@
 			name = MoneyBox;
 			packageProductDependencies = (
 				B26EF47728881E7F003BFDF2 /* Networking */,
+				3F23E3B62BAC9BE800984772 /* SnapKit */,
+				3F23E3B82BAC9BE800984772 /* SnapKit-Dynamic */,
 			);
 			productName = MoneyBox;
 			productReference = B2CA46C8279350880041B3A5 /* MoneyBox.app */;
@@ -190,6 +280,7 @@
 			);
 			mainGroup = B2CA46BF279350880041B3A5;
 			packageReferences = (
+				3F23E3B52BAC9AF000984772 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = B2CA46C9279350880041B3A5 /* Products */;
 			projectDirPath = "";
@@ -229,7 +320,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
+				3F23E3BF2BAD121500984772 /* AccountUserViewController.swift in Sources */,
+				3F3C2F162BAFA97C004432ED /* Double+Extension.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
+				3F3C2F132BAF58D1004432ED /* ProductCell.swift in Sources */,
+				3F3C2F252BB0E71D004432ED /* ProductViewModel.swift in Sources */,
+				3F3C2F112BAF570C004432ED /* AccountUserViewModel.swift in Sources */,
+				3F3C2F2C2BB10614004432ED /* UtilFunctions.swift in Sources */,
+				3F3C2F192BAFB09D004432ED /* ProductViewController.swift in Sources */,
+				3F3C2F282BB10279004432ED /* UIView+Extension.swift in Sources */,
+				3F23E3BC2BAD0B4500984772 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3C2F1F2BB0BC78004432ED /* LoginViewModelTest.swift in Sources */,
 				B2CA47672794D69A0041B3A5 /* StubData.swift in Sources */,
+				3F23E3C02BAD121500984772 /* AccountUserViewController.swift in Sources */,
+				3F3C2F222BB0CAA1004432ED /* ProductViewController.swift in Sources */,
+				3F3C2F232BB0CAEC004432ED /* Double+Extension.swift in Sources */,
+				3F3C2F262BB0E71D004432ED /* ProductViewModel.swift in Sources */,
+				3F3C2F2F2BB154E8004432ED /* AccountViewModelTests.swift in Sources */,
+				3F3C2F212BB0CA9C004432ED /* ProductCell.swift in Sources */,
+				3F3C2F2D2BB10614004432ED /* UtilFunctions.swift in Sources */,
+				3F3C2F202BB0CA95004432ED /* AccountUserViewModel.swift in Sources */,
+				3F3C2F292BB10279004432ED /* UIView+Extension.swift in Sources */,
+				3F3C2F1D2BB0BBBC004432ED /* DataProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -369,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -394,7 +505,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,7 +534,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +620,28 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3F23E3B52BAC9AF000984772 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3F23E3B62BAC9BE800984772 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F23E3B52BAC9AF000984772 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3F23E3B82BAC9BE800984772 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F23E3B52BAC9AF000984772 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
 		B26EF47728881E7F003BFDF2 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;

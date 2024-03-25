@@ -25,3 +25,4 @@ public class DataProvider: DataProviderLogic {
         API.Account.addMoney(request: request).fetchResponse(completion: completion)
     }
 }
+
