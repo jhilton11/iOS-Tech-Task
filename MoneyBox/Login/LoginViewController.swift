@@ -76,21 +76,20 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func login() {
-//        guard !emailTf.text!.isEmpty else {
-//            Utilities.createAlert(vc: self, title: "", message: "Email field is empty")
-//            return
-//        }
-//        
-//        guard !passwordTf.text!.isEmpty else {
-//            Utilities.createAlert(vc: self, title: "", message: "Password field is empty")
-//            return
-//        }
-//        
-//        let email = emailTf.text!
-//        let password = passwordTf.text!
-//        activityIndicator.startAnimating()
-//        viewModel.login(email: email, password: password)
-        viewModel.login()
+        guard !emailTf.text!.isEmpty else {
+            Utilities.createAlert(vc: self, title: "", message: "Email field is empty")
+            return
+        }
+        
+        guard !passwordTf.text!.isEmpty else {
+            Utilities.createAlert(vc: self, title: "", message: "Password field is empty")
+            return
+        }
+        
+        let email = emailTf.text!
+        let password = passwordTf.text!
+        activityIndicator.startAnimating()
+        viewModel.login(email: email, password: password)
     }
     
     private func setConstraints() {
